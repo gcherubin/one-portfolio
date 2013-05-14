@@ -838,9 +838,20 @@ Change widths as necessary
     letter-spacing: 0px;
     color:#141414
 }
+.entry-content h2{
+	width: 66%;
+	margin:0 auto;
+	font-size: 2.8rem;
+	font-size: 28px;
+	line-height:36px;
+    font-family: 'proxima_novalight';
+    letter-spacing: 0px;
+    color:#141414;
+    text-align:center
+}
 .entry-content p{
 	width: 50%;
-	margin:0 auto
+	margin:0 auto 1.5em auto
 }
 .entry-content a{
 	color:#141414
@@ -873,8 +884,54 @@ Change widths as necessary
   background: none repeat scroll 0 0 #ec494f;
   color: #fff;
   text-transform:uppercase
-  }
-  .link:hover {
-      background: none repeat scroll 0 0 #e3e3e3;
-      color: #fff;
-  }
+}
+.link:hover {
+  background: none repeat scroll 0 0 #e3e3e3;
+  color: #fff;
+}
+
+/* Footer */
+
+.site-footer{
+	background:#141414;
+	padding:3em 0 1.5em 0;
+	color:#fff;
+	height:auto;
+	text-align:center;
+	margin:3em 0 0 0
+}
+.site-info h3{
+	font-family: 'proxima_novalight';
+	font-size: 1.6rem;
+	font-size: 16px;
+	color:#fff;
+	text-transform:uppercase;
+}
+.site-info h3 b{
+	font-family: 'proxima_nova_rgbold';
+}
+.social{
+	list-style:none;
+	margin:2em auto;
+	padding:0;
+}
+.social li{
+	display:inline;
+	margin:0 1em
+}
+.social a{
+	display:inline-block;
+	width:24px;
+	height:24px;
+	text-indent:-9999em;
+	zoom:1
+}
+.social a.li{
+	background:url("img/linkedin.png") no-repeat center center
+}
+.social a.tw{
+	background:url("img/twitter.png") no-repeat center center
+}
+.social a.pi{
+	background:url("img/pinterest.png") no-repeat center center
+}

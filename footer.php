@@ -12,10 +12,13 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<?php do_action( 'one_portfolio_credits' ); ?>
-			<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'one_portfolio' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'one_portfolio' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'one_portfolio' ), 'One Portfolio', '<a href="http://www.gianlucacherubin.com" rel="designer">Gianluca Cherubin</a>' ); ?>
+			<h3><b>let's stay</b> in touch!</h3>
+			<ul class="social">
+				<li><a class="li" href="http://www.linkedin.com/in/gianlucacherubin" target="_blank">LinkedIn</a></li>
+				<li><a class="tw" href="https://twitter.com/gcherubin" target="_blank">Twitter</a></li>
+				<li><a class="pi" href="http://pinterest.com/gcherubin/" target="_blank">Pinterest</a></li>
+
+			</ul>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
