@@ -351,15 +351,15 @@ textarea {
 
 /* Links */
 a {
-	color: royalblue;
+	color: #141414;
 }
 a:visited {
-	color: purple;
+	color: #141414;
 }
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #141414;
 }
 
 /* Alignment */
@@ -791,13 +791,16 @@ Change widths as necessary
     color: #141414;
     text-transform: uppercase;
     padding: 0 0 5px 0;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
   }
   .menu-main-container ul li.current-menu-item a{
     color: #141414;
     border-bottom: 1px solid #141414;
   }
   .menu-main-container ul li a:hover {
-    color: #999;
+    color: #141414;
     border-bottom: none;
 }
 
@@ -831,44 +834,53 @@ Change widths as necessary
 .portfolio:nth-child(odd) { background:#e3e3e3; }
 .portfolio:nth-child(even) { background:#fff; }
 
-.entry-header h2{
+.entry-header,.entry-extra,.entry-content,#social{
+	text-align:left;
+	width: 50%;
+	margin:1.5em auto
+}
+.entry-header a{
+	color:#141414;
+	transition: all 0.3s ease 0s;
+}
+.entry-header h1,.entry-header h2{
 	font-size: 3.2rem;
 	font-size: 32px;
     font-family: 'proxima_nova_rgbold';
     letter-spacing: 0px;
-    color:#141414
+    color:#141414;
+    margin:1em 0;
+    line-height:36px;
 }
 .entry-content h2,.entry-content h3{
-	width: 66%;
-	margin:0 auto;
 	font-size: 2.8rem;
 	font-size: 28px;
 	line-height:36px;
     font-family: 'proxima_nova_rgbold';
     letter-spacing: 0px;
     color:#141414;
-    text-align:center
+    margin:1em auto;
 }
 .entry-content h3{
-	font-size: 1.6rem;
-	font-size: 16px;
+	font-size: 2rem;
+	font-size: 20px;
 	line-height:26px;
-	width: 45%;
-	margin:1em auto 0 auto;
 	font-family: 'proxima_novalight';
 }
 .entry-content p{
-	width: 50%;
 	margin:0 auto 1.5em auto
 }
 .entry-content a{
 	color:#141414
 }
+.entry-content img{
+	margin:0 0 1.5em 0
+}
 .skills{
 	margin:1.5em 0
 }
-.wp-post-image{
-	max-width: 1080px;
+.portfolio img{
+	max-width: 80%;
 	margin:0 auto
 }
 .link {
@@ -894,10 +906,22 @@ Change widths as necessary
   text-transform:uppercase
 }
 .link:hover {
-  background: none repeat scroll 0 0 #e3e3e3;
+  background: none repeat scroll 0 0 #141414;
   color: #fff;
 }
-
+.page-title{
+	font-size: 2.8rem;
+	font-size: 28px;
+	line-height:36px;
+    font-family: 'proxima_novalight';
+    letter-spacing: 0px;
+    color:#141414;
+    text-align:center;
+    margin:1.5em 0 0 0
+}
+.page-title b{
+	font-family: 'proxima_nova_rgbold';
+}
 /* Footer */
 
 .site-footer{
@@ -918,6 +942,13 @@ Change widths as necessary
 .site-info h3 b{
 	font-family: 'proxima_nova_rgbold';
 }
+.share{
+	border:1px solid #d7d7d7;
+	border-width:1px 0 0 0
+}
+.share h3{
+	color:#ec494f
+}
 .social{
 	list-style:none;
 	margin:2em auto;
@@ -932,7 +963,16 @@ Change widths as necessary
 	width:24px;
 	height:24px;
 	text-indent:-9999em;
-	zoom:1
+	zoom:1;
+	transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+}
+.social a:hover{
+	opacity:.5
+}
+.social a.em{
+	background:url("img/mail.png") no-repeat center center
 }
 .social a.li{
 	background:url("img/linkedin.png") no-repeat center center
@@ -942,4 +982,9 @@ Change widths as necessary
 }
 .social a.pi{
 	background:url("img/pinterest.png") no-repeat center center
+}
+#social{
+	font-family: 'proxima_novalight' !important;
+	font-size: 1.2rem !important;
+	font-size: 12px !important;
 }

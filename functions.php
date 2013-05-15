@@ -326,3 +326,23 @@ add_action( 'init', 'add_custom_taxonomies', 0 );
 add_theme_support('post-thumbnails', array( 'post', 'portfolio'));
 
 
+/*-----------------------------------------------------------------------------------*/
+/*	Custom Login Logo Support
+/*-----------------------------------------------------------------------------------*/
+
+function tz_custom_login_logo() {
+    echo '<style type="text/css">
+        h1 a { background-image:url('.get_template_directory_uri().'/img/logo_gc.png) !important; background-size: auto auto !important; height:150px !important }
+    </style>';
+}
+function tz_wp_login_url() {
+    return home_url();
+}
+function tz_wp_login_title() {
+    return get_option('blogname');
+}
+
+add_action('login_head', 'tz_custom_login_logo');
+add_filter('login_headerurl', 'tz_wp_login_url');
+add_filter('login_headertitle', 'tz_wp_login_title');
+

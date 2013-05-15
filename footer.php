@@ -14,6 +14,8 @@
 		<div class="site-info">
 			<h3><b>let's stay</b> in touch!</h3>
 			<ul class="social">
+				<li><a class="em" href="mailto:gianlucacherubin@gmail.com" target="_blank">Email</a></li>
+
 				<li><a class="li" href="http://www.linkedin.com/in/gianlucacherubin" target="_blank">LinkedIn</a></li>
 				<li><a class="tw" href="https://twitter.com/gcherubin" target="_blank">Twitter</a></li>
 				<li><a class="pi" href="http://pinterest.com/gcherubin/" target="_blank">Pinterest</a></li>

@@ -15,7 +15,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title"><?php echo $term->name; ?></h1>
+				<h1 class="page-title">Showing Works with <b><?php echo $term->name; ?></b> Skill</h1>
 				<?php
 					if ( is_category() ) :
 						// show an optional category description
@@ -59,5 +59,4 @@ get_header(); ?>
 		</div><!-- #content -->
 	</section><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
