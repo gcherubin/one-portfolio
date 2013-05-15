@@ -31,6 +31,9 @@
 			if (get_post_meta($wp_query->post->ID, $key2, true) != '') {
 				echo '<a class="link" target="_blank" href="'.get_post_meta($wp_query->post->ID, $key2, true).'">'.get_post_meta($wp_query->post->ID, $key1, true).'</a>';
 			}
+			else {
+				echo '<span class="linkOff">'.get_post_meta($wp_query->post->ID, $key1, true).'</span>';
+			}
 		?>	
 		
 		

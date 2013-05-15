@@ -831,7 +831,7 @@ Change widths as necessary
 	padding:0 0 5em 0
 }
 
-.portfolio:nth-child(odd) { background:#e3e3e3; }
+.portfolio:nth-child(odd) { background:#f2f2f2; }
 .portfolio:nth-child(even) { background:#fff; }
 
 .entry-header,.entry-extra,.entry-content,#social{
@@ -881,7 +881,22 @@ Change widths as necessary
 }
 .portfolio img{
 	max-width: 80%;
-	margin:0 auto
+	margin:0 auto;
+	/* -moz-transform: translate(0px, 100px);
+	-webkit-transform: translate(0px, 100px);
+	-o-transform: translate(0px, 100px);
+	-ms-transform: translate(0px, 100px);
+	transform: translate(0px, 100px);
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	-webkit-opacity: 0;
+	opacity: 0;
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+	filter: alpha(opacity=0); */
+}
+
+.portfolio h2{
+	margin:0 0 1em 0 !important;
 }
 .link {
   border: 0 none;
@@ -902,12 +917,31 @@ Change widths as necessary
   width: 16.795%; /* auto */
   text-align: center; /* DELETE WHEN WIDTH AUTO */
   background: none repeat scroll 0 0 #ec494f;
-  color: #fff;
   text-transform:uppercase
 }
 .link:hover {
   background: none repeat scroll 0 0 #141414;
   color: #fff;
+}
+.linkOff {
+  border: 0 none;
+  border-radius: 2px 2px 2px 2px;
+  color: #141414 !important;
+  font-family: 'proxima_novalight';
+  font-size: 1.2rem;
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 0;
+  margin-top: 10px;
+  padding: 7px 20px;
+  text-transform: none;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  width: 16.795%; /* auto */
+  text-align: center; /* DELETE WHEN WIDTH AUTO */
+  background: none repeat scroll 0 0 #ccc;
+  text-transform:uppercase;
 }
 .page-title{
 	font-size: 2.8rem;
@@ -969,7 +1003,13 @@ Change widths as necessary
     -webkit-transition: all 0.3s ease 0s;
 }
 .social a:hover{
-	opacity:.5
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	-webkit-opacity: 0.5;
+	opacity: 0.5;
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+	filter: alpha(opacity=50);
+
 }
 .social a.em{
 	background:url("img/mail.png") no-repeat center center
