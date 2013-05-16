@@ -10,6 +10,10 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
+		<div id="intro" class="site-intro">
+			<h1>UI Designer & Frontend Developer in Brooklyn, NY.</h1>
+			<a href="#" class="scrolltoworks">Works</a>
+		</div>
 		<div id="content" class="site-content" role="main">
 			
 			<?php 	

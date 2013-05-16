@@ -24,3 +24,26 @@ jQuery(window).scroll(function() {
     }); 
 });
 */
+
+/*jQuery('.site-intro').backstretch('http://localhost:8888/gianlucacherubin.com/wp-content/themes/one-portfolio/img/bg.jpg');*/
+
+jQuery(document).ready(function(){
+    var height_siteintro = jQuery(window).height() - jQuery(".site-header").height();
+    jQuery(".site-intro").height(height_siteintro);
+    jQuery(".site-intro h1").css("line-height",height_siteintro +"px");
+    jQuery(".site-intro").addClass("active");
+});
+jQuery(window).resize(function() {
+	var height_siteintro = jQuery(window).height() - jQuery(".site-header").height();
+    jQuery(".site-intro").height(height_siteintro);
+     jQuery(".site-intro h1").css("line-height",height_siteintro +"px");
+});
+
+jQuery(document).ready(function(){
+	jQuery(".scrolltoworks").on('click',function(e){
+		e.preventDefault();
+		jQuery('.site-content').ScrollTo({duration: 1000,});
+	});
+	
+});
+
